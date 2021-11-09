@@ -1,3 +1,4 @@
-add_library(parser src/serial.c)
+add_library(serial src/serial.c)
 
-target_include_directories(parser PUBLIC include)
+target_include_directories(serial PUBLIC include)
+target_link_libraries(serial parser)
