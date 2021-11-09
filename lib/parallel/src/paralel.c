@@ -36,8 +36,6 @@ int paral(Film *films, size_t films_count) {
             }
         }
     }
-    int status_adr = 0 ;
-    for (int i = 0; i < sysconf(_SC_NPROCESSORS_ONLN); i++) status = pthread_join(threads[i], (void **) &status_adr);
-
+   
     return 0;
 }
